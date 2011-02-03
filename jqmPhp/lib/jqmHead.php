@@ -51,7 +51,7 @@ class jqmHead extends jqmTag {
         $this->_css = $this->add(new jqmLink($css),true);
         $this->_jq = $this->add(new jqmScript($jq),true);
         $this->_jqm = $this->add(new jqmScript($jqm),true);
-        $this->_title = new jqmText($title); $this->add(new jqmTag('title', '', array($this->_title)));
+        $this->_title = new jqmText($title); $this->add(new jqmTag('title', '', '', array($this->_title)));
     }
     /**
      * Gets and sets the xmlns property.
