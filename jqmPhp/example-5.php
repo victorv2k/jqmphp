@@ -1,5 +1,11 @@
 <?php
     /**
+     * Example 5 - Adding Listviews
+     * @package jqmPhp
+     * @filesource
+     */
+
+    /**
      * Include the jqmPhp class.
      */
     include 'lib/jqmPhp.php';

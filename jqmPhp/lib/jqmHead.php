@@ -18,15 +18,21 @@
  *
  */
 /**
- * This class represents the 'head' tag.
- * @class jqmHead
+ * This file is part of the jqmPhp package.
+ * @package jqmPhp
+ * @filesource
+ */
+/**
+ * This class represents the 'head' tag
  * @author Bruno Maia <brunoleaomaia@gmail.com>
  * @copyright Copyright (c) 2011, Bruno Maia
- * @license http://www.gnu.org/licenses/gpl.html GNU Public License
+ * @license http://www.gnu.org/licenses/gpl.html GNU Public License
  * @package jqmPhp
- * @version 0.01
+ * @version 0.02
+ * @since 0.01
  * @link http://code.google.com/p/jqmphp/ jqmPhp Project Website
  * @link http://www.jquerymobile.com jQuery Mobile Website
+ * @filesource
  */
 class jqmHead extends jqmTag {
     private $_xmlns;
@@ -44,7 +50,7 @@ class jqmHead extends jqmTag {
      * @param string $jq
      * @param string $jqm
      */
-    function __construct($xmlns='http://www.w3.org/1999/xhtml',$charset='UTF-8',$title='',$css='http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css',$jq='http://code.jquery.com/jquery-1.4.4.min.js',$jqm='http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js'){
+    function __construct($xmlns=JQMPHP_XMLNS,$charset=JQMPHP_CHARSET,$title=JQMPHP_TITLE,$css=JQMPHP_CSS,$jq=JQMPHP_JQ,$jqm=JQMPHP_JQM){
         parent::__construct('head');
         $this->_xmlns = $this->attribute('xmlns', $xmlns, true);
         $this->_charset = new jqmAttribute('charset', $charset); $this->add(new jqmTag('meta', '', array($this->_charset)));

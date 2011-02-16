@@ -24,6 +24,46 @@
  */
 define('JQMPHP_PATH', 'lib/', true);
 
+/**
+ * Sets the Application Default Title.
+ * @var JQMPHP_TITLE
+ */
+define('JQMPHP_TITLE', '', true);
+/**
+ * Sets the jQuery path.
+ * @var JQMPHP_JQ
+ */
+define('JQMPHP_JQ', 'http://code.jquery.com/jquery-1.5.min.js', true);
+
+/**
+ * Sets the jQuery Mobile path.
+ * @var JQMPHP_JQM
+ */
+define('JQMPHP_JQM', 'http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js', true);
+
+/**
+ * Sets the jQuery Mobile CSS path.
+ * @var JQMPHP_CSS
+ */
+define('JQMPHP_CSS', 'http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css', true);
+
+/**
+ * Sets the Default Doctype.
+ * @var JQMPHP_DOCTYPE
+ */
+define('JQMPHP_DOCTYPE', 'html', true);
+
+/**
+ * Sets the Default Xmlns.
+ * @var JQMPHP_XMLNS
+ */
+define('JQMPHP_XMLNS', 'http://www.w3.org/1999/xhtml', true);
+
+/**
+ * Sets the Default Charset.
+ * @var JQMPHP_CHARSET
+ */
+define('JQMPHP_CHARSET', 'UTF-8', true);
 
 /*
  * Includes required files.
@@ -67,9 +107,10 @@ require_once JQMPHP_PATH.'jqmTitle.php';
  * @class jqmPhp
  * @author Bruno Maia <brunoleaomaia@gmail.com>
  * @copyright Copyright (c) 2011, Bruno Maia
- * @license http://www.gnu.org/licenses/gpl.html GNU Public License
+ * @license http://www.gnu.org/licenses/gpl.html GNU Public License
  * @package jqmPhp
- * @version 0.01
+ * @version 0.02
+ * @since 0.01
  * @link http://code.google.com/p/jqmphp/ jqmPhp Project Website
  * @link http://www.jquerymobile.com jQuery Mobile Website
  */
@@ -85,7 +126,7 @@ class jqmPhp {
      * @param string $jq
      * @param string $jqm
      */
-    function __construct($doctype='html',$xmlns='http://www.w3.org/1999/xhtml',$charset='UTF-8',$title='',$css='http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css',$jq='http://code.jquery.com/jquery-1.4.4.min.js',$jqm='http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js'){
+    function __construct($doctype=JQMPHP_DOCTYPE,$xmlns=JQMPHP_XMLNS,$charset=JQMPHP_CHARSET,$title=JQMPHP_TITLE,$css=JQMPHP_CSS,$jq=JQMPHP_JQ,$jqm=JQMPHP_JQM){
          $this->_html = new jqmHtml($doctype, $xmlns, $charset, $title, $css, $jq, $jqm);
     }
     /**
