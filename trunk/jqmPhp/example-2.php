@@ -1,5 +1,11 @@
 <?php
     /**
+     * Example 2 - Adding Pages
+     * @package jqmPhp
+     * @filesource
+     */
+
+    /**
      * Include the jqmPhp class.
      */
     include 'lib/jqmPhp.php';

@@ -1,5 +1,11 @@
 <?php
     /**
+     * Example 4 - Adding Form Elements
+     * @package jqmPhp
+     * @filesource
+     */
+
+    /**
      * Include the jqmPhp class.
      */
     include 'lib/jqmPhp.php';
@@ -109,7 +115,7 @@
      */
     $form->add('<h3>Checkbox Group</h3>');
         $cg = $form->add(new jqmCheckboxgroup(), true);
-        $cg->legend('Favorite Searh Engine:');
+        $cg->legend('Favorite Search Engine:');
         $cg->addCheckbox('se1', 'se1', 'Bing');
         $cg->addCheckbox('se2', 'se2', 'Google');
         $cg->addCheckbox('se3', 'se3', 'Yahoo')->fieldContain(true);

@@ -1,5 +1,11 @@
 <?php
     /**
+     * Example 3 - Adding Objects
+     * @package jqmPhp
+     * @filesource
+     */
+
+    /**
      * Include the jqmPhp class.
      */
     include 'lib/jqmPhp.php';
