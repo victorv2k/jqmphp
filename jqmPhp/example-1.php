@@ -13,6 +13,6 @@
     include 'lib/jqmPhp.php';
     
     $j = new jqmPhp();
-    $j->addBasicPage('example-1', 'Example 1', '<h1>Hello World</h1><p>This is a basic page!</p><a href="example-2.php#">Exemple 2</a>');
+    $j->addBasicPage('example-1', 'Example 1', '<h1>Hello World</h1><p>This is a basic page!</p><a href="example-2.php#">Example 2</a>');
     echo $j;
 ?>
