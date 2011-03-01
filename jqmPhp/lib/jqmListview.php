@@ -34,7 +34,7 @@
  * @link http://code.google.com/p/jqmphp/ jqmPhp Project Website
  * @link http://www.jquerymobile.com jQuery Mobile Website
  */
-class jqmListviem extends jqmTag {
+class jqmListview extends jqmTag {
     private $_role;
     private $_inset;
     private $_filter;
@@ -264,4 +264,8 @@ class jqmListviem extends jqmTag {
         return $this;
     }
 }
+/**
+ * Fix a typo in first verison of the Class Name;
+ */
+class jqmListviem extends jqmListview {}
 ?>
