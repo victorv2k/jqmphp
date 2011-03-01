@@ -54,7 +54,7 @@
      */
     $p->addContent('<h1>Adding Listviews</h1>');
     $p->addContent('<h3>Basic</h3>');
-    $list1 = new jqmListviem();
+    $list1 = new jqmListview();
     $list1->addDivider('Basic Examples', '2')->inset(true);
     $list1->addBasic('Example 1', 'example-1.php#');
     $list1->addBasic('Example 2', 'example-2.php#');
@@ -68,7 +68,7 @@
      * Create and config a new jqmListview object and add Icon Items.
      */
     $p->addContent('<h3>Icon</h3>');
-    $list2 = new jqmListviem();
+    $list2 = new jqmListview();
     $list2->inset(true)->addDivider('Animals')->dividerTheme('a');
     $list2->addIcon('Dogs', '#', 'docs/images/dog.png', '13');
     $list2->addIcon('Cats', '#', 'docs/images/cat.png', '10');
@@ -78,7 +78,7 @@
      * Create and config a new jqmListview object and add Thumbnails Items.
      */
     $p->addContent('<h3>Thumbnails</h3>');
-    $list3 = new jqmListviem();
+    $list3 = new jqmListview();
     $list3->inset(true);
     $list3->addThumb('YouTube', 'www.youtube.com', 'http://www.youtube.com', 'docs/images/youtube.png');
     $list3->addThumb('Flickr', 'www.flickr.com', 'http://www.flickr.com', 'docs/images/flickr.png');
@@ -90,7 +90,7 @@
      * Create and config a new jqmListview object and add Split Items.
      */
     $p->addContent('<h3>Split</h3>');
-    $list4 = new jqmListviem();
+    $list4 = new jqmListview();
     $list4->inset(true)->splitIcon('gear')->splitTheme('c');
     $list4->addDivider('Unread Messages', '11')->dividerTheme('c')->countTheme('b');
     $list4->addSplit('Account 1', '#', '#', '09');
@@ -102,20 +102,20 @@
      * Create and config a new jqmListview object and add Nested Items.
      */
     $p->addContent('<h3>Nested</h3>');
-    $list5 = new jqmListviem();
+    $list5 = new jqmListview();
     $list5->inset(true)->theme('a');
     $list5->addDivider('Cars');
-        $fiat = new jqmListviem();
+        $fiat = new jqmListview();
         $fiat->addBasic('Bravo', 'example-5.php#');
         $fiat->addBasic('Linea', 'example-5.php#');
         $fiat->addBasic('Punto', 'example-5.php#');
     $list5->addNested('Fiat', $fiat);
-        $gm = new jqmListviem();
+        $gm = new jqmListview();
         $gm->addBasic('Celta', 'example-5.php#');
         $gm->addBasic('Agile', 'example-5.php#');
         $gm->addBasic('Vectra', 'example-5.php#');
     $list5->addNested('GM', $gm);
-        $honda = new jqmListviem();
+        $honda = new jqmListview();
         $honda->addBasic('Fit', 'example-5.php#');
         $honda->addBasic('City', 'example-5.php#');
         $honda->addBasic('Civic', 'example-5.php#');
