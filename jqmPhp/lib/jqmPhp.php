@@ -19,11 +19,15 @@
  */
 
 /**
+ * Sets the library folder name.
+ * @var JQMPHP_FOLDER
+ */
+define('JQMPHP_FOLDER', 'lib', true);
+/**
  * Sets the library path.
  * @var JQMPHP_PATH
  */
-define('JQMPHP_PATH', 'lib/', true);
-
+define('JQMPHP_PATH', realpath(dirname(__FILE__).'/../'.JQMPHP_FOLDER.'/').'/', true);
 /**
  * Sets the Application Default Title.
  * @var JQMPHP_TITLE
@@ -109,8 +113,9 @@ require_once JQMPHP_PATH.'jqmTitle.php';
  * @copyright Copyright (c) 2011, Bruno Maia
  * @license http://www.gnu.org/licenses/gpl.html GNU Public License
  * @package jqmPhp
- * @version 0.02
+ * @version 0.03
  * @since 0.01
+ * @link http://www.jqmphp.com/ jqmPhp Website
  * @link http://code.google.com/p/jqmphp/ jqmPhp Project Website
  * @link http://www.jquerymobile.com jQuery Mobile Website
  */

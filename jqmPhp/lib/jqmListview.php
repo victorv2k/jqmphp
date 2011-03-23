@@ -29,8 +29,9 @@
  * @copyright Copyright (c) 2011, Bruno Maia
  * @license http://www.gnu.org/licenses/gpl.html GNU Public License
  * @package jqmPhp
- * @version 0.02
+ * @version 0.03
  * @since 0.01
+ * @link http://www.jqmphp.com/ jqmPhp Website
  * @link http://code.google.com/p/jqmphp/ jqmPhp Project Website
  * @link http://www.jquerymobile.com jQuery Mobile Website
  */
@@ -265,7 +266,7 @@ class jqmListview extends jqmTag {
     }
 }
 /**
- * Fix a typo in first verison of the Class Name;
+ * Fix a typo in first version of the Class Name;
  */
 class jqmListviem extends jqmListview {}
 ?>

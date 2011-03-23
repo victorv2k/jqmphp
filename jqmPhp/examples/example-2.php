@@ -8,7 +8,7 @@
     /**
      * Include the jqmPhp class.
      */
-    include 'lib/jqmPhp.php';
+    include '../lib/jqmPhp.php';
 
     /**
      * Create a new jqmPhp object.
@@ -28,6 +28,7 @@
     $p->addContent('<p>In this example we create a page (jqmPage),');
     $p->addContent(' add content and buttons to the header.');
     $p->addContent(' After we add the page to jqmPhp object.</p>');
+    $p->addContent('<a href="index.php#" data-role="button" data-theme="a">Home</a>');
     $p->addContent('<a href="example-3.php#" data-role="button">Example 3</a>');
     $p->footer()->title('Example 2 Footer');
     $p->footer()->position('fixed');
